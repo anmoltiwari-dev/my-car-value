@@ -24,7 +24,22 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Used Car pricing api service
+
+#### 1. what this app will do:
+![img.png](images/basic.png)
+
+#### 2. API's to be implemented
+![img.png](images/routes.png)
+
+#### 3. How our app will be structured
+![img.png](images/img.png)
+
+#### 4. making a connection to sqlite
+![img.png](images/typeorm.png)
+
+#### 5.  Creating an entity
+![img.png](images/creating_entity.png)
 
 ## Installation
 
@@ -58,15 +73,20 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+## Migrations
+Generate Migrations from enitity files:
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+`` npm run typeorm migration:generate -n migrations/<migration-name> -- -o ``
 
-## Stay in touch
+To run the migrations:
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+`` npm run typeorm migration:run``
+
+
+
+## Swagger
+
+`` http://localhost:3000/api``
 
 ## License
 
